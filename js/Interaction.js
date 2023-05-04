@@ -1,13 +1,14 @@
 console.log("MODE JS Activé")
 
 //Message de salutation
+let date = new Date;
+let heure = date.getHours();
 let salutation = document.getElementById("Salutation")
-salutation.innerText = "</>Hello/Good Night</>"
-
+let reponse = (heure < 18)? salutation.innerText = "</>Hello</>":salutation.innerText = "</>Good Night</>"
 
 //Presentation
 let whoIAm = document.getElementById("Me")
-whoIAm.innerHTML = "My name is PROSPER <br> I'm a student developer"
+whoIAm.innerHTML = "My name is <span class='S'>PROSPER</span> <br> I'm a <span class='S'>student</span> developer"
 
 //Domaine
 let iDo = document.getElementById("Rôle")
