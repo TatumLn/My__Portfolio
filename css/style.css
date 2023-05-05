@@ -1,39 +1,36 @@
 * {
-padding: 0;
+    padding: 0;
 }
 
+/* --------------------------- Sur Toute les Pages----------------------------- */
 .Header,
 .Contenu {
-display: flex;
+    display: flex;
 }
 
 .Header {
-justify-content: space-between;
+    justify-content: space-between;
 }
 
 .Header__title,
 .NavBar{
-font-size: 2em;
-animation: 5s ;
+    font-size: 2em;
+    animation: 5s ;
 }
 
 .Header__switcher {
-border: 2px solid black;
-border-radius: 25em;
-width: 2.2em;
-height: 1em;
-margin-top: 0.7em;
-margin-right: 2em;
-}
-
-.Presentation {
-    padding: 1em 4em;
+    border: 2px solid black;
+    border-radius: 25em;
+    width: 2.2em;
+    height: 1em;
+    margin-top: 0.7em;
+    margin-right: 2em;
 }
 
 .Foot,
 #Salutation,
 #Rôle{
-font-size: 1.1em;
+    font-size: 1.1em;
 }
 
 .NavBar ul li a,
@@ -48,6 +45,17 @@ font-size: 1.1em;
 
 .Foot {
     background-color: rgb(184, 183, 183);
+    text-align: center;
+}
+
+.Foot ul {
+    list-style: none;
+    display: inline-block;
+}
+
+/* ---------------------------------Sur la page Home--------------------------------------*/
+.Presentation {
+    padding: 1em 4em;
 }
 
 span.S {
@@ -55,7 +63,20 @@ span.S {
     text-decoration: underline;
 }
 
+/* -------------------------------- Sur la page About-------------------------------------*/
+.Presentation__perso,
+.Presentation__edu {
+    margin-bottom: 0;
+}
 
+td.P,
+td.E {
+    color: brown;
+    font-weight: bold;
+    padding: 0em 0.7em;
+}
+
+/* -------------------------------- Les Animations ---------------------------------------*/
 @keyframes slideGauche {
     
 }

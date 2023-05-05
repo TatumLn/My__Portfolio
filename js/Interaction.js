@@ -1,3 +1,4 @@
+//Test
 console.log("Salama Tompoko Oh")
 
 function selecteurID (idName) {
@@ -7,6 +8,7 @@ function selecteurID (idName) {
 function creationElement (elementName) {
     return document.createElement(elementName)
 }
+
 
 
 //------------------------Home-------------------------------------------------------------------------------
@@ -25,12 +27,11 @@ let iDo = selecteurID("Rôle")
 iDo.innerText = "</>Front & Back_End Mobile & Software </>"
 
 //Telechargement de mon CV
-
+let boutonDown = selecteurID("btn")
+boutonDown.addEventListener("onClick", ()=>{
+})
 
 //----------------------About--------------------------------------------------------------------------------
-let name = "ZAFINIAINA"
-let surname = "Herma PROSPER"
-let infoPersonnel = selecteurID("personnel")
-let infoEducatif = selecteurID("education")
-let tableUn = creationElement("table")
-let tableDeux = creationElement("table")
+let infoEducatif = selecteurID ("edu")
+infoEducatif.innerHTML = "<p>IPSM</p>"
+
