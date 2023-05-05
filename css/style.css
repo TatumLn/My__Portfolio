@@ -7,17 +7,14 @@
 .Contenu {
     display: flex;
 }
-
 .Header {
     justify-content: space-between;
 }
-
-.Header__title,
-.NavBar{
-    font-size: 2em;
-    animation: 5s ;
+.Header__title{
+    font-size: 2.5em;
+    font-weight: bold;
+    animation: 5s slideGauche ;
 }
-
 .Header__switcher {
     border: 2px solid black;
     border-radius: 25em;
@@ -25,48 +22,49 @@
     height: 1em;
     margin-top: 0.7em;
     margin-right: 2em;
+    animation: 3s slideDroite;
     cursor: pointer;
 }
-
 .NavBar li {
     padding: 0.2em 0em;
-    text-align: center;
 }
-
+.NavBar a {
+    font-family:'Catamaran', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    padding: .8em 1em .6em 1em;
+    font-weight: 600;
+    animation: 5s slideGauche;
+}
 .active {
-    color: blueviolet;
+    color: #28CBA4;
 }
-
+.NavBar a:hover {
+    color: brown;
+}
 .Presentation {
     padding: 1em 4em;
 }
-
 .Foot,
 #Salutation,
 #Rôle{
     font-size: 1.1em;
 }
-
 .NavBar ul li a,
 .Foot ul li a{
     text-decoration: none;
 }
-
-#btn {
-    border-color: rgb(108, 227, 68);
-    color: brown;
-    padding: 0.5em;
-    cursor: pointer;
-}
-
 .Foot {
     background-color: rgb(184, 183, 183);
     text-align: center;
 }
-
 .Foot ul {
     list-style: none;
     display: inline-block;
+}
+.Foot a:hover {
+    display: inline-block;
+    color: white;
 }
 
 /* ---------------------------------Sur la page Home--------------------------------------*/
@@ -76,43 +74,42 @@ aside.Flag {
     width: 20em;
     margin: 1.4em;
     display: flex;
+    animation: 2s slideDroite;
 }
-
-span.White {
-    border: 1px solid black;
-    width: 5em;   
-}
-
 span.S {
-    color: rgb(78, 207, 8);
-    text-decoration: underline;
+    color: #28CBA4;
+}
+#btn {
+    padding: 0.5em;
+    cursor: pointer;
+    background-color: #28CBA4;;
+    -webkit-box-shadow: 6px 8px 10px 0px #28CBA4;;
+    box-shadow: 6px 5px 20px 0px #28CBA4;
+}
+#btn:hover {
+    background-color: #adf8e6;
+    animation: 5s;
 }
 
 /* -------------------------------- Sur la page About-------------------------------------*/
 .Presentation__perso {
     margin-bottom: 0;
 }
-
-.Presentation__edu,
-div.E {
+.Presentation__edu {
     margin-top: 1.6em;
 }
-
 td.P,
 td.E {
-    color: brown;
+    color: #28CBA4;
     font-weight: bold;
     padding: 0em 0.7em;
 }
-
 .institut span {
-    border: 1px solid brown;
+    border: 1px solid #28CBA4;
 }
-
 .E {
     padding: 0em 0.7em;
 }
-
 aside.Profil__img {
     background-image: url(../assets/img1.jpg);
     background-size: cover;
@@ -131,7 +128,6 @@ section.Message {
     border: 1px solid black;
     margin: 2em 3em;
 }
-
 aside.Contact {
     border: 1px solid black;
     margin: 2.5em;
@@ -140,5 +136,23 @@ aside.Contact {
 
 /* -------------------------------- Les Animations ---------------------------------------*/
 @keyframes slideGauche {
-    
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+@keyframes slideDroite {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
