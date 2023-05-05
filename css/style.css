@@ -89,9 +89,13 @@ span.S {
 }
 
 /* -------------------------------- Sur la page About-------------------------------------*/
-.Presentation__perso,
-.Presentation__edu {
+.Presentation__perso {
     margin-bottom: 0;
+}
+
+.Presentation__edu,
+div.E {
+    margin-top: 1.6em;
 }
 
 td.P,
@@ -110,10 +114,15 @@ td.E {
 }
 
 aside.Profil__img {
-    border: 1px solid black;
+    background-image: url(../assets/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 10em;
+    border: 3px solid rgb(165, 16, 16);
     border-radius: 1em;
     margin-top: 1.8em;
     margin-bottom: 1em;
+    margin-left: 4em;
     cursor: pointer;
 }
 
