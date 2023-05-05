@@ -92,6 +92,10 @@ span.S {
 }
 
 /* -------------------------------- Sur la page About-------------------------------------*/
+.Presentation__perso,
+.Presentation__edu {
+    border: 1px solid black;
+}
 .Presentation__perso {
     margin-bottom: 0;
 }
@@ -100,12 +104,11 @@ span.S {
 }
 td.P,
 td.E {
-    color: #28CBA4;
     font-weight: bold;
     padding: 0em 0.7em;
 }
 .institut span {
-    border: 1px solid #28CBA4;
+    border: 1px solid;
 }
 .E {
     padding: 0em 0.7em;
@@ -115,23 +118,20 @@ aside.Profil__img {
     background-size: cover;
     background-position: center;
     width: 10em;
-    border: 3px solid rgb(165, 16, 16);
+    border: 3px solid rgb(200, 199, 199);
     border-radius: 1em;
     margin-top: 1.8em;
     margin-bottom: 1em;
     margin-left: 4em;
+    text-indent: -9999px; /*Enlever le titre de l'image ainsi que l'icone*/
     cursor: pointer;
 }
 
 /* -------------------------------- Sur La page Contact------------------------------------*/
-section.Message {
-    border: 1px solid black;
-    margin: 2em 3em;
-}
 aside.Contact {
-    border: 1px solid black;
-    margin: 2.5em;
-    padding: 0.8em;
+    border: 1px solid rgb(191, 191, 191);
+    margin: 2.9em;
+    padding: 2em;
 }
 
 /* -------------------------------- Les Animations ---------------------------------------*/
