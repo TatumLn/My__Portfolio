@@ -71,6 +71,18 @@
 
 /* ---------------------------------Sur la page Home--------------------------------------*/
 
+aside.Flag {
+    border: 1px solid black;
+    width: 20em;
+    margin: 1.4em;
+    display: flex;
+}
+
+span.White {
+    border: 1px solid black;
+    width: 5em;   
+}
+
 span.S {
     color: rgb(78, 207, 8);
     text-decoration: underline;
@@ -104,6 +116,19 @@ aside.Profil__img {
     margin-bottom: 1em;
     cursor: pointer;
 }
+
+/* -------------------------------- Sur La page Contact------------------------------------*/
+section.Message {
+    border: 1px solid black;
+    margin: 2em 3em;
+}
+
+aside.Contact {
+    border: 1px solid black;
+    margin: 2.5em;
+    padding: 0.8em;
+}
+
 /* -------------------------------- Les Animations ---------------------------------------*/
 @keyframes slideGauche {
     
