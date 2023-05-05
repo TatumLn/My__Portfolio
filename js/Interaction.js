@@ -9,6 +9,10 @@ function creationElement (elementName) {
     return document.createElement(elementName)
 }
 
+function selecteurClass (className) {
+    return document.querySelector(className)   
+}
+
 
 
 //------------------------Home-------------------------------------------------------------------------------
@@ -28,10 +32,9 @@ iDo.innerText = "</>Front & Back_End Mobile & Software </>"
 
 //Telechargement de mon CV
 let boutonDown = selecteurID("btn")
-boutonDown.addEventListener("onClick", ()=>{
+boutonDown.addEventListener('click', ()=>{
+    alert("Bouton de telechargement de CV a ete cliquez!")
 })
 
 //----------------------About--------------------------------------------------------------------------------
-let infoEducatif = selecteurID ("edu")
-infoEducatif.innerHTML = "<p>IPSM</p>"
 

@@ -25,6 +25,20 @@
     height: 1em;
     margin-top: 0.7em;
     margin-right: 2em;
+    cursor: pointer;
+}
+
+.NavBar li {
+    padding: 0.2em 0em;
+    text-align: center;
+}
+
+.active {
+    color: blueviolet;
+}
+
+.Presentation {
+    padding: 1em 4em;
 }
 
 .Foot,
@@ -38,9 +52,11 @@
     text-decoration: none;
 }
 
-.btn {
+#btn {
+    border-color: rgb(108, 227, 68);
     color: brown;
     padding: 0.5em;
+    cursor: pointer;
 }
 
 .Foot {
@@ -54,9 +70,6 @@
 }
 
 /* ---------------------------------Sur la page Home--------------------------------------*/
-.Presentation {
-    padding: 1em 4em;
-}
 
 span.S {
     color: rgb(78, 207, 8);
@@ -76,6 +89,21 @@ td.E {
     padding: 0em 0.7em;
 }
 
+.institut span {
+    border: 1px solid brown;
+}
+
+.E {
+    padding: 0em 0.7em;
+}
+
+aside.Profil__img {
+    border: 1px solid black;
+    border-radius: 1em;
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+    cursor: pointer;
+}
 /* -------------------------------- Les Animations ---------------------------------------*/
 @keyframes slideGauche {
     
