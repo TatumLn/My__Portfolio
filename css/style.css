@@ -2,25 +2,38 @@
 padding: 0;
 }
 
-.Header {
+.Header,
+.Contenu {
 display: flex;
+}
+
+.Header {
 justify-content: space-between;
 }
 
 .Header__title,
 .NavBar{
 font-size: 2em;
+animation: 5s ;
 }
 
-.Header__switcher,
+.Header__switcher {
+border: 2px solid black;
+border-radius: 25em;
+width: 2.2em;
+height: 1em;
+margin-top: 0.7em;
+margin-right: 2em;
+}
+
+.Presentation {
+    padding: 1em 4em;
+}
+
 .Foot,
 #Salutation,
 #Rôle{
 font-size: 1.1em;
-}
-
-.Contenu {
-display: flex;
 }
 
 .NavBar ul li a,
@@ -30,8 +43,19 @@ display: flex;
 
 .btn {
     color: brown;
+    padding: 0.5em;
+}
+
+.Foot {
+    background-color: rgb(184, 183, 183);
 }
 
 span.S {
+    color: rgb(78, 207, 8);
     text-decoration: underline;
+}
+
+
+@keyframes slideGauche {
+    
 }
