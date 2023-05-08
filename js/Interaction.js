@@ -28,7 +28,7 @@ whoIAm.innerHTML = "My name is <span class='S'>PROSPER</span> I'm a <span class=
 
 //Domaine
 let iDo = selecteurID("Rôle")
-iDo.innerText = "</>Front & Back_End Mobile & Software </>"
+iDo.innerText = "</>Front & Back_End / Mobile & Software </>"
 
 //Telechargement de mon CV
 let boutonDown = selecteurID("btn")

@@ -45,7 +45,6 @@
 .Presentation {
     padding: 1em 4em;
 }
-.Foot,
 #Salutation,
 #Rôle{
     font-size: 1.1em;
@@ -55,18 +54,8 @@
     text-decoration: none;
 }
 .Foot {
-    background-color: rgb(184, 183, 183);
-    text-align: center;
+        text-align: center;
 }
-.Foot ul {
-    list-style: none;
-    display: inline-block;
-}
-.Foot a:hover {
-    display: inline-block;
-    color: white;
-}
-
 /* ---------------------------------Sur la page Home--------------------------------------*/
 
 aside.Photo {
