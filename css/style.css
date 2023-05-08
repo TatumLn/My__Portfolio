@@ -69,12 +69,37 @@
 
 /* ---------------------------------Sur la page Home--------------------------------------*/
 
-aside.Flag {
-    border: 1px solid black;
-    width: 20em;
+aside.Photo {
+    /* juste pour test 
+    border: 1px solid black; 
+    */
     margin: 1.4em;
     display: flex;
     animation: 2s slideDroite;
+}
+div.Photo__1,
+div.Photo__2,
+div.Photo__3{
+    border: 1px solid rgb(154, 40, 40);
+    border-radius: 25px;
+    width: 4.4em;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0.5em 0 0.5em;
+}
+div.Photo__1{
+    background-image: url(../assets/img1.jpg);
+}
+div.Photo__2{
+    background-image: url();
+}
+div.Photo__3{
+    background-image: url(../assets/img2.jpg);
+}
+div.Photo__1:hover,
+div.Photo__2:hover,
+div.Photo__3:hover{
+    width: 8em;
 }
 span.S {
     color: #28CBA4;
