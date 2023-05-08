@@ -25,6 +25,9 @@
     animation: 3s slideDroite;
     cursor: pointer;
 }
+.NavBar {
+    background-color: rgb(75, 61, 61);
+}
 .NavBar li {
     padding: 0.2em 0em;
 }
