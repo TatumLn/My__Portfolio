@@ -3,6 +3,11 @@
 }
 
 /* --------------------------- Sur Toute les Pages----------------------------- */
+.background{
+    background-image: url('../assets/');
+    background-size: cover;
+    background-position: center;
+}
 .Header,
 .Contenu {
     display: flex;
@@ -15,18 +20,16 @@
     font-weight: bold;
     animation: 5s slideGauche ;
 }
-.Header__switcher {
-    border: 2px solid black;
-    border-radius: 25em;
-    width: 2.2em;
-    height: 1em;
-    margin-top: 0.7em;
-    margin-right: 2em;
-    animation: 3s slideDroite;
+#btn__prev,
+#btn__suiv{
+    border: 2px solid;
+    width: 2em;
+    height: 2em;
     cursor: pointer;
 }
+
 .NavBar {
-    background-color: rgb(75, 61, 61);
+    background-color: #28CBA4;
 }
 .NavBar li {
     padding: 0.2em 0em;
@@ -40,7 +43,7 @@
     animation: 5s slideGauche;
 }
 .active {
-    color: #28CBA4;
+    color: #eef7f5;
 }
 .NavBar a:hover {
     color: brown;
@@ -73,11 +76,11 @@ div.Photo__1,
 div.Photo__2,
 div.Photo__3{
     border: 1px solid rgb(154, 40, 40);
-    border-radius: 25px;
+    border-radius: 5px;
     width: 4.4em;
     background-position: center;
     background-size: cover;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.1em 0 0.1em;
 }
 div.Photo__1{
     background-image: url(../assets/img1.jpg);
@@ -117,18 +120,14 @@ span.S {
     margin-bottom: 0;
 }
 .Presentation__edu {
-    margin-top: 1.6em;
+    margin-top: 1.5em;
 }
 td.P,
 td.E {
     font-weight: bold;
-    padding: 0em 0.7em;
 }
 .institut span {
     border: 1px solid;
-}
-.E {
-    padding: 0em 0.7em;
 }
 aside.Profil__img {
     background-image: url(../assets/img1.jpg);
@@ -139,7 +138,7 @@ aside.Profil__img {
     border-radius: 1em;
     margin-top: 1.8em;
     margin-bottom: 1em;
-    margin-left: 4em;
+    margin-left: 2em;
     text-indent: -9999px; /*Enlever le titre de l'image ainsi que l'icone*/
     cursor: pointer;
 }

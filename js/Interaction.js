@@ -1,6 +1,6 @@
 //Test
 console.log("Salama Tompoko Oh")
-
+//Selecteur
 function selecteurID (idName) {
     return document.getElementById(idName)
 }
@@ -12,8 +12,6 @@ function creationElement (elementName) {
 function selecteurClass (className) {
     return document.querySelector(className)   
 }
-
-
 
 //------------------------Home-------------------------------------------------------------------------------
 //Message de salutation
@@ -28,7 +26,7 @@ whoIAm.innerHTML = "My name is <span class='S'>PROSPER</span> I'm a <span class=
 
 //Domaine
 let iDo = selecteurID("Rôle")
-iDo.innerText = "</>Front & Back_End / Mobile & Software </>"
+iDo.innerText = "</>Front & MEAN Stack / Mobile & Software </>"
 
 //Telechargement de mon CV
 let boutonDown = selecteurID("btn")
@@ -37,4 +35,26 @@ boutonDown.addEventListener('click', ()=>{
 })
 
 //----------------------About--------------------------------------------------------------------------------
-
+//----------------------Background---------------------------------------------------------------------------
+const prevBtn = selecteurID("btn__prev");
+const suivBtn = selecteurID("btn__suiv");
+const background = selecteurClass(".background");
+//tableau d'image
+const images = ['../assets/', '../assets/', '../assets/']
+let indexImageActuel = 0;
+//Pour le bouton prev
+prevBtn.addEventListener('click', ()=>{
+    indexImageActuel--;
+    if(indexImageActuel < 0){
+        indexImageActuel = images.length - 1;
+    }
+    background.style.backgroundImage = `url('${images[indexImageActuel]}')`;
+})
+//Pour le bouton suiv
+suivBtn.addEventListener('click', ()=>{
+    indexImageActuel++;
+    if(indexImageActuel >= images.length){
+        indexImageActuel = 0;
+    }
+    background.style.backgroundImage = `url('${images[indexImageActuel]}')`;
+})
