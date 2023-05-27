@@ -69,7 +69,21 @@
     text-decoration: none;
 }
 .Foot {
-        text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Foot h3{
+    font-family:'Catamaran', sans-serif;
+    font-size: small;
+}
+.Foot ul {
+    list-style-type: none;
+    display: flex;
+    padding: 1em;
+}
+.Foot li{
+    padding: 0.1em;
 }
 /* ---------------------------------Sur la page Home--------------------------------------*/
 
