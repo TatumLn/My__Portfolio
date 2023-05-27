@@ -20,12 +20,21 @@
     font-weight: bold;
     animation: 5s slideGauche ;
 }
-#btn__prev,
-#btn__suiv{
+#btn__prev{
     border: 2px solid;
-    width: 2em;
-    height: 2em;
+    width: 0;
+    height: 1em;
     cursor: pointer;
+    animation: 2s slideDroite;
+}
+#btn__suiv{
+    margin-right: 1.8em;
+    margin-top: 1.7em;
+    border: 2px solid;
+    width: 0;
+    height: 1em;
+    cursor: pointer;
+    animation: 2s slideDroite;
 }
 
 .NavBar {
